@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - LovingArt</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <div class ="container">
+        <div class ="navbar">
+            <div class = "logo">
+              <a href="index.html"><img src ="images/Aaa-Transparent-IMG_2587.PNG" width="125px"></a>
+        </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/Cart-trans.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+
+<!--------------about-page------------>   
+
+<div class="about-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="smalli-container">
+                    <h2 class="title">About</h2>
+                    <ul>
+                     <li>Since our childhood, my sister and I developed a keen interest in arts and crafts, inspired by television programs such as MAD, Mister Maker, The Art Room by Lalon, and Art Attack. This passion evolved into a dedicated hobby. In 2018, we took our creative pursuits to the next level by establishing an Instagram page where we showcased our handmade artworks.</li>
+                     <br>
+                     <li>Over time, our artistic endeavors gained traction, leading to a surge in orders. To date, we have successfully fulfilled over 400+ orders, with our clientele steadily expanding. Our commitment to customization, tailoring each product to meet the unique preferences of our customers, has been a key factor in our success.</li>
+                     <br>
+                     <li>Specializing in handmade products designed for gifting purposes, we pride ourselves on the distinctive character imbued in each creation. Handmade, in our context, is synonymous with authenticity and exclusivity. Unlike mass-produced items, every piece in our collection possesses its own unique charm and identity.</li>
+                     <br>
+                     <li>Our clientele, now exceeding 950+ families on Instagram, is a testament to the widespread appreciation for our handmade offerings. We take pride in delivering not just products but a commitment to authenticity. When customers choose our handmade items, they are investing in a guarantee that each piece is one of a kind, ensuring a truly special and unparalleled experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!------------footer------------->
+<div class="footer">
+    <div class="small-contaioner">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Subscribe our youtube channel</h3>
+            </div>
+            <div class="footer-col-2">
+                <!------<img src="images/lovingartlogo.jpeg" width="70px">----->
+                <p>Our Purpose Is To Meet The Requirement Of Customer and Benefits Of Handmade Product Accesible To The Many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------js for toggle menu---------->
+     <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+     </script>
+<!------------js for toggle Form---------> 
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator =  document.getElementById("Indicator");
+
+       function register(){
+
+         RegForm.style.transform = "translateX(0px)";
+         LoginForm.style.transform = "translateX(0px)";
+         Indicator.style.transform = "translateX(100px)";
+       }
+
+       function login(){
+        
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+       }
+       function Register(){
+        alert("Successfully register");
+       }
+       
+</script>
+
+    </body>
+</html>
